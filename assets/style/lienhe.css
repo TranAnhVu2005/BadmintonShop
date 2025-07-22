@@ -1,0 +1,218 @@
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    color: #333;
+    line-height: 1.6;
+   
+}
+
+a
+{
+    text-decoration: none !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;                /* Xóa margin-top và bottom dư thừa */
+    padding: 20px 15px;            /* Giảm padding nếu muốn */
+    background-image: url('https://th.bing.com/th/id/R.e9b8868bb327f23b973bac7f5dc6ae5f?rik=CCQhgevsOkrJKw&pid=ImgRaw&r=0'); /* Thay đổi 'duong_dan_den_hinh_nen_cua_ban.jpg' bằng đường dẫn thực tế đến ảnh của bạn */
+    background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ phần body */
+    background-position: center center; /* Căn giữa hình ảnh */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-attachment: fixed;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+/* --- Tiêu đề --- */
+h2 {
+    font-size: 30px;
+    color: rgb(18, 96, 86);
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: blue;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* --- Bố cục chính --- */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 320px;
+    background: #fffdfc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 320px;
+    background: #fef9f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* --- Tiêu đề nhỏ --- */
+h3 {
+    font-size: 20px;
+     color: rgb(18, 96, 86);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* --- Thông tin liên hệ --- */
+.info-section p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.info-section p strong {
+    display: inline-block;
+    min-width: 85px;
+    color: #555;
+}
+
+a {
+    color: #f9632c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Hệ thống cửa hàng --- */
+.store-list {
+    list-style: none;
+    padding: 0;
+}
+
+.store-list li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    border-bottom: 1px dashed #ddd;
+    font-size: 14.5px;
+    color: #444;
+}
+
+.store-list li:last-child {
+    border-bottom: none;
+}
+
+.store-list li::before {
+    content: '📍';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    color: #f9632c;
+    font-size: 16px;
+}
+
+.store-list strong {
+    color: #333;
+}
+
+/* --- Form liên hệ --- */
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f9632c;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(249,99,44,0.3);
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, #f9632c, #f94d0c);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #e0521b, #d3470f);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* --- Bản đồ nằm riêng full màn hình --- */
+.fullwidth-map {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.fullwidth-map iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    .container {
+        margin: 10px;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+}

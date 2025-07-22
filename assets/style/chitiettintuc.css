@@ -1,0 +1,92 @@
+.page-main {
+    grid-area: main;
+    width: 100%;
+    margin: 10px 0;
+    padding: 16px;
+    max-width: 100%;
+    color: #003366;
+}
+
+.ct-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+.ct-meta {
+    font-size: 0.9rem;
+    color: #6699CC;
+    margin-bottom: 16px;
+}
+
+.ct-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+.ct-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+/* Điều hướng */
+.ct-nav {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ct-nav button {
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 16px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ct-nav button:disabled {
+    opacity: 0.5;
+    cursor: default;
+    background-color: rgb(13, 67, 67);
+}
+
+.ct-nav button:hover {
+    background-color: rgb(13, 67, 67);
+}
+
+@media (min-width: 768px) {
+    .page-main {
+        max-width: 720px;
+        padding: 24px;
+    }
+
+    .ct-title {
+        font-size: 2rem;
+    }
+
+    .ct-content {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page-main {
+        max-width: 960px;
+        padding: 32px;
+    }
+
+    .ct-title {
+        font-size: 2.5rem;
+    }
+
+    .ct-content {
+        font-size: 1.2rem;
+    }
+}

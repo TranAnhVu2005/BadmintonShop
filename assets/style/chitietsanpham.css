@@ -1,0 +1,105 @@
+.page-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+}
+
+.page-main > div {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: #c1f3e1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.page-main img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+}
+
+.page-main h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.page-main p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.page-main p strong {
+  color: #d82a2a;
+}
+
+.page-main > div > div:last-child {
+  flex: 1;
+  min-width: 300px;
+}
+
+.page-main .price {
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.page-main .price strike {
+  color: #888;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.page-main .offer-box {
+  background-color: #fff5e4;
+  border: 1px dashed #f2994a;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.page-main .offer-box p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.page-main .add-to-cart-btn {
+  margin-top: 20px;
+  background-color: #ff4f00;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.page-main .add-to-cart-btn:hover {
+  background-color: #cc3e00;
+}
+
+.add-cart {
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  background-color: tomato;
+}
+
+.add-cart:hover {
+  color: #fff;
+  background-color: #cc3e00;
+}

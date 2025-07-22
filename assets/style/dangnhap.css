@@ -1,0 +1,237 @@
+/* Responsive design cho các thiết bị nhỏ hơn 
+@media (max-width: 768px) {
+  .login-page {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .login-container {
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .login-title {
+    font-size: 26px;
+  }
+
+  .login-subtitle {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .login-container input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .login-container button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .login-form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .remember-me {
+    font-size: 16px;
+  }
+
+  .forgot-password {
+    float: none;
+    align-self: flex-end;
+    font-size: 16px;
+  }
+
+  .social-login {
+    font-size: 16px;
+  }
+
+  .social-btn {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .login-footer {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-title {
+    font-size: 22px;
+  }
+
+  .login-subtitle,
+  .social-login,
+  .login-footer {
+    font-size: 14px;
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 14px;
+  }
+
+  .login-form-options {
+    font-size: 14px;
+  }
+
+  .remember-me {
+    font-size: 14px;
+  }
+
+  .forgot-password {
+    font-size: 14px;
+  }
+} */
+
+.login-page {
+  display: flex;
+  min-height: 70vh;
+  background-color: #d9e1e4;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeSlideUp 0.8s ease-in-out;
+}
+
+/* Định nghĩa hiệu ứng */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tiêu đề */
+.login-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin: 15px 10px;
+  margin-top: 10px;
+  color: #000000;
+}
+
+/* Input */
+.login-container input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Nút đăng nhập và mạng xã hội */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.login-form button {
+  background: rgb(15, 80, 77);
+}
+
+button:hover {
+  transform: scale(1.02); /* phóng to nhẹ */
+  transition: all 0.3s ease; /* hiệu ứng mượt */
+}
+
+.remember-me {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px; /* Giảm khoảng cách giữa checkbox và chữ */
+  font-size: 18px;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+}
+.remember-me input[type="checkbox"] {
+  margin: 0; /* Xóa margin mặc định của checkbox */
+}
+
+.login-form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.social-login {
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.facebook-btn {
+  background-color: #1877f2;
+}
+
+.google-btn {
+  background-color: #db4437;
+}
+
+/* Forgot password */
+.forgot-password {
+  float: right;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* Phần cuối */
+
+.login-footer {
+  text-align: center;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .login-container {
+    margin: 20px 20px !important;
+  }
+}

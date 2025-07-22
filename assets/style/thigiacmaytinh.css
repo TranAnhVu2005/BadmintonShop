@@ -1,0 +1,55 @@
+body {
+  position: relative;
+}
+.tm-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.tm-container {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tm-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.tm-container button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #22bb33;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#webcam-container {
+  margin: 0 auto 20px auto;
+}
+
+#label-container div {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.checkLocation {
+  position: fixed;
+  font-size: 20px;
+  padding: 8px;
+  background-color: rgb(197, 40, 40);
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  border: solid 10px;
+}

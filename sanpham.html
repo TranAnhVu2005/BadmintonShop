@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Shop</title>
+    <link rel="icon" href="./assets/images/anhtrangchu/title-icon.jpg" type="icon">
+    <link rel="stylesheet" href="./assets/style/sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/style/formchung.css">
+    <link rel="stylesheet" href="./assets/style/thigiacmaytinh.css">
+
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header-container">
+            <div class="page-header__logo">
+                <a href="trangchu.html">
+                    <img src="./assets/images/anhtrangchu/logo.jpg" alt="logo" class="page-header__logo-icon">
+                </a>
+            </div>
+            <div class="page-header__hotline">
+                <p>
+                    <i class="fa-solid fa-phone"></i>HOTLINE:<a href="lienhe.html">0977508430</a>|<a
+                        href="lienhe.html">0338000308</a>
+                </p>
+            </div>
+            <form action="#" class="search">
+                <input type="text" class="search-input" placeholder="Nhập từ khóa...">
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="page-header__tool">
+                <div class="tool-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>HOTLINE</p>
+                </div>
+                <div class="tool-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>GIỎ HÀNG</p>
+                </div>
+                <a href="taikhoan.html" class="tool-item">
+                    <i class="fa-solid fa-user"></i>
+                    <p>TÀI KHOẢN</p>
+                </a>
+            </div>
+        </div>
+        <nav class="page-header-navbar">
+            <a class="navbar-link" href="trangchu.html">Trang chủ</a>
+            <a class="navbar-link" href="sanpham.html">Sản phẩm</a>
+            <a class="navbar-link" href="tintuc.html">Tin tức</a>
+            <a class="navbar-link" href="gioithieu.html">Giới thiệu</a>
+            <a class="navbar-link" href="lienhe.html">Liên hệ</a>
+            <a class="navbar-link" href="dangnhap.html">Đăng nhập</a>
+            <a class="navbar-link" href="dangki.html">Đăng ký</a>
+            <span class="navbar-link read-more">Xem Thêm</span>
+            <form action="#" class="search">
+                <input type="text" class="search-input" placeholder="Nhập từ khóa...">
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <span class="navbar-link read-more"><i class="fa-solid fa-bars"></i></span>
+        </nav>
+    </header>
+    <main>
+        <!-- Side bar -->
+        <section class="sidebar">
+
+            <div class="sidebar__filter sidebar__filter--all">
+                <div class="sidebar__filter__container sidebar__filter--all__type">
+                    <p>TẤT CẢ</p>
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+            </div>
+            <div class="sidebar__filter sidebar__filter--sort">
+                <div class="sidebar__filter__container sidebar__filter--sort__type">
+                    <p>CHỌN LOẠI HÀNG</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="sidebar__filter__subContaniner">
+                    <p>Vợt</p>
+                    <p>Giày</p>
+                    <p>Áo</p>
+                    <p>Váy</p>
+                    <p>Quần</p>
+                </div>
+            </div>
+
+            <div class="sidebar__filter sidebar__filter--price">
+                <div class="sidebar__filter__container sidebar__filter--price__type">
+                    <p>CHỌN MỨC GIÁ</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="sidebar__filter__subContaniner">
+                    <p>Giá dưới 500.000đ</p>
+                    <p>500.000đ - 1 triệu</p>
+                    <p>1 - 2 triệu</p>
+                    <p>2 - 3 triệu</p>
+                    <p>Giá trên 3 triệu</p>
+                </div>
+            </div>
+
+            <div class="sidebar__filter sidebar__filter--branch">
+                <div class="sidebar__filter__container sidebar__filter--branch__type">
+                    <p>CHỌN THƯƠNG HIỆU</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="sidebar__filter__subContaniner">
+                    <p>Yonex</p>
+                    <p>Lining</p>
+                    <p>Victor</p>
+                    <p>Mizuno</p>
+                    <p>VNB</p>
+                </div>
+            </div>
+
+
+
+            <div class="sidebar__filter sidebar__filter--sort">
+                <div class="sidebar__filter__container sidebar__filter--sort__type">
+                    <p>SẮP XẾP THEO</p>
+                    <i class="fa-solid fa-sort"></i>
+                </div>
+                <div class="sidebar__filter__subContaniner">
+                    <p>Giá tiền từ thấp đến cao</p>
+                    <p>Giá tiền từ cao đến thấp</p>
+                </div>
+            </div>
+
+            <div class="sidebar__filter sidebar__filter--sort">
+                <div class="sidebar__filter__container sidebar__filter--sort__type sidebar__filter--more">
+                    <p>XEM THÊM</p>
+                    <i class="fa-solid fa-sort"></i>
+                </div>
+                <div class="sidebar__filter__subContaniner add_filter_for_moblie sidebar__filter__subContaniner--more">
+                    <p class="racket-more">Vợt</p>
+                    <p>Giày</p>
+                    <p>Áo</p>
+                    <p>Váy</p>
+                    <p>Quần</p>
+                    <p>Giá dưới 500.000đ</p>
+                    <p>500.000đ - 1 triệu</p>
+                    <p>1 - 2 triệu</p>
+                    <p>2 - 3 triệu</p>
+                    <p>Giá trên 3 triệu</p>
+                    <p>Yonex</p>
+                    <p>Lining</p>
+                    <p>Victor</p>
+                    <p>Mizuno</p>
+                    <p>VNB</p>
+                    <p>Giá tiền từ cao đến thấp</p>
+                    <p>Giá tiền từ thấp đến cao</p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        <!-- List item -->
+        <section class="content">
+            <div href="trangchu.html" class="item" style="display: none;">
+                <div class="item__iconHeart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img src="./assets/images/anhsanpham/vot1.jpg" alt="">
+                </div>
+                <div class="descriptionItem">
+                    <p class="idItem" style="display: none;">001</p>
+                    <p class="nameItem">Vợt cầu lông Yonex Nanoflare 700 Pro 2024</p>
+                    <div class="infoOtherItem">
+                        <p class="costItem">4.309.000 <sup>đ</sup></p>
+                        <div class="add-cartIcon">
+                            <i class="fas fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer--top">
+            <div class="page-footer--top__block">
+                <p>Thông tin chung</p>
+                <ul class="ul-nodclr">
+                    <li><a href="#">Lanh Chanh Sốp</a> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn
+                        quốc, cung cấp sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</li>
+                    <li><a href="#">Với sứ mệnh:</a> "Lanh Chanh Sốp cam kết mang đến những sản phẩm, dịch vụ chất lượng
+                        tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</li>
+                    <li><a href="#">Tầm nhìn:</a> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</li>
+                </ul>
+            </div>
+            <div class="page-footer--top__block">
+                <p>THÔNG TIN LIÊN HỆ</p>
+                <ul class="ul-nodclr">
+                    <li>Hệ thống cửa hàng: <a href="#">1 Super Center, 5 shop Premium và 72 cửa hàng trên toàn quốc</a>
+                    </li>
+                    <li><a href="#">Xem tất cả các cửa hàng Lanh Chanh Sốp</a></li>
+                </ul>
+                <ul class="ul-nodclr">
+                    <li>Hotline: <a href="#">0977508430 | 0338000308</a></li>
+                    <li>Email: <a href="#">info@shopvnb.com</a></li>
+                    <li>Hợp tác kinh doanh: <a href="#">0947342259 (Ms. Thảo)</a></li>
+                    <li>Hotline bán sỉ: <a href="#">0911195711</a></li>
+                    <li>Nhượng quyền thương hiệu: <a href="#">0334.741.141 (Mr. Hậu)</a></li>
+                    <li>Than phiền dịch vụ: <a href="#">0334.741.141 (Mr. Hậu)</a></li>
+                </ul>
+            </div>
+            <div class="page-footer--top__block">
+                <p>Chính sách</p>
+                <ul class="ul-dclr">
+                    <li><a href="#">Thông tin về vận chuyển và giao nhận</a></li>
+                    <li><a href="#">Chính sách đổi trả,hoàn tiền</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách xử lý khiếu nại</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính Sách Bảo Mật Thông Tin</a></li>
+                    <li><a href="#">Chính sách nhượng quyền</a></li>
+                </ul>
+            </div>
+            <div class="page-footer--top__block">
+                <p>Hướng dẫn</p>
+                <ul class="ul-dclr">
+                    <li><a href="#">Danh sách số tài khoản chính thức của các shop trong hệ thống VNB Sports</a></li>
+                    <li><a href="#">Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</a></li>
+                    <li><a href="#">Hướng dẫn thanh toán</a></li>
+                    <li><a href="#">Kiểm tra bảo hành</a></li>
+                    <li><a href="#">Kiểm tra đơn hàng</a></li>
+                    <li><a href="#">HƯỚNG DẪN MUA HÀNG</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-footer--bottom">
+            <p>Công ty TNHH Lanh Chanh SPORTS</p>
+            <p>Địa chỉ: Đại học Cần Thơ, Xuân Khánh, Ninh Kiều, Cần Thơ</p>
+            <p>Email: lanhchanhshop@sports.com</p>
+            <p>GPKD số 0314496879 do Proof cấp ngày 05/07/2025</p>
+            <p>GĐ/Sở hữu website: Nhóm 3 - CT188</p>
+            <img src="./assets/images/anhtrangchu/proof.jpg" style="width: 200px;" alt="chung nhan">
+        </div>
+    </footer>
+    <script src="./assets/js/sanpham.js"></script>
+    <script src="./assets/js/giohang.js">   
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = document.querySelectorAll(".item");
+
+            items.forEach((item) => {
+                item.addEventListener("click", function () {
+                    const product = {
+                        id: item.querySelector(".idItem").textContent,
+                        name: item.querySelector(".nameItem").textContent,
+                        image: item.querySelector("img").getAttribute("src"),
+                        price: item.querySelector(".costItem").textContent.trim()
+                    };
+                    localStorage.setItem("selectedProduct", JSON.stringify(product));
+                    window.location.href = "chitietsanpham.html";
+                });
+            });
+        });
+
+    </script>
+    <script src="./assets/js/formchung.js"></script>
+
+    <a href="./thigiacmaytinh.html" class="checkLocation"><i class="fa-solid fa-camera"></i></a>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const allFilters = [
+                { index: 2, content: document.querySelector(".sidebar .sidebar__filter:nth-child(2) .sidebar__filter__subContaniner") },
+                { index: 3, content: document.querySelector(".sidebar .sidebar__filter:nth-child(3) .sidebar__filter__subContaniner") },
+                { index: 4, content: document.querySelector(".sidebar .sidebar__filter:nth-child(4) .sidebar__filter__subContaniner") },
+                { index: 5, content: document.querySelector(".sidebar .sidebar__filter:nth-child(5) .sidebar__filter__subContaniner") },
+            ];
+
+            const addMoreContainer = document.querySelector(".add_filter_for_moblie");
+
+            function updateMoreSection() {
+                // Xóa nội dung cũ
+                addMoreContainer.innerHTML = '';
+
+                allFilters.forEach(filter => {
+                    const filterElement = document.querySelector(`.sidebar .sidebar__filter:nth-child(${filter.index})`);
+                    if (window.getComputedStyle(filterElement).display === "none") {
+                        const clone = filter.content.cloneNode(true);
+                        clone.querySelectorAll("p").forEach(p => {
+                            addMoreContainer.appendChild(p.cloneNode(true));
+                        });
+                    }
+                });
+            }
+
+            // Cập nhật ban đầu
+            updateMoreSection();
+
+            // Cập nhật lại khi resize
+            window.addEventListener('resize', updateMoreSection);
+        });
+    </script> -->
+
+</body>
+
+</html>

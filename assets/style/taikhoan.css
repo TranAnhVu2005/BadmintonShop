@@ -1,0 +1,147 @@
+.page-header {
+  padding: 0px 0px 226px 0px;
+}
+
+.account-page {
+  /* margin-top: 20px; */
+  grid-area: main;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1200px; /* đủ rộng để 2 khối nằm ngang */
+  margin: 0 auto; /* căn giữa khung */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.account-page__left {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  flex: 0 0 350px;
+  max-width: 350px;
+}
+
+.account-page__right {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  flex: 1 1 750px;
+  min-width: 650px;
+  overflow-x: auto;
+}
+
+.account-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.account-page__hello {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.username {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.account-subtitle {
+  font-size: 20px;
+  margin: 20px 0 10px;
+  font-weight: 600;
+  border-bottom: 2px solid #8ec5fc;
+  padding-bottom: 6px;
+}
+
+.account-info__item {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  border-left: 4px solid #8ec5fc;
+  background-color: #f1f9ff;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+.account-info__item i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+/* Nút sửa */
+.account-info__edit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(15, 80, 77);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.account-info__edit-button:hover {
+  background-color: rgb(4, 44, 42);
+}
+
+.account-info__edit-button i {
+  margin-right: 8px;
+}
+
+/* Bảng đơn hàng */
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: rgb(15, 80, 77);
+  color: white;
+}
+
+.order-table td {
+  background-color: #fff;
+}
+
+.order-table th:nth-child(1) {
+  min-width: 80px; /* Đơn hàng */
+}
+
+.order-table th:nth-child(2) {
+  min-width: 100px; /* Ngày */
+}
+
+.order-table th:nth-child(3) {
+  min-width: 180px; /* Địa chỉ */
+}
+
+.order-table th:nth-child(4) {
+  min-width: 80px; /* Giá trị */
+}
+
+.order-table th:nth-child(5) {
+  min-width: 100px; /* Tình trạng */
+}
